@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shole Zard</title>
+    <style>
+      body {
+        display: block;
+        margin: 10px;
+        padding: 20px 130px;
+      }
+      h1 {
+        text-align: center;
+        color: #882f0e;
+        font-size: 35px;
+        padding: 30px 60px;
+        border: 1px solid #ee630d;
+        border-radius: 10px;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      h2 {
+        text-align: center;
+        color: #882f0e;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        font-size: 21px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 18px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: rgb(255, 245, 104);
+        color: rgb(200, 80, 29);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+        padding: 15px 20px;
+        box-shadow: ;
+        border: none;
+        border-radius: 6px;
+        font-size: 35px;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .container {
+        width: 70%;
+        padding: 30px;
+        margin: 25px auto;
+        color: black;
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(253, 239, 132) 0%,
+          rgb(247, 198, 169) 54.2%,
+          rgb(21, 186, 196) 100.3%
+        );
+        border-radius: 13px;
+      }
+
+      .learn-more {
+        color: #ff0073;
+        text-decoration: none;
+        font-size: 15px;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Shole Zard</h1>
+      <h2>An Iranian traditional dessert</h2>
+      <hr />
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/144/original/sholezard2.jpg?1686433706"
+        alt="Shole Zard"
+      />
+      <p>
+        Sholezard is an Iranian traditional saffron rice pudding dessert. It is
+        traditionally served on the occasion of festivals such as
+        <em>Ramazan</em>. It is often vowed to cook it to achieve a wish, and
+        when it is achieved, it is spread among others. Sholezard is made of
+        rice cooked with water and is flavored with saffron, sugar, rose water,
+        butter, cinnamon and cardamom. It is typically decorated with cinnamon,
+        almonds, rosebuds and pistachios.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Sholezard"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <button class="try-button">Try Iranian Shole Zard</button>
+    </div>
+    <script>
+      function tryIn() {
+        let name = prompt("What is your name?");
+
+        alert(
+          "Thankns, " +
+            name +
+            " we will be in touch. Meanwhile, have a lot of Shole Zard!"
+        );
+      }
+      let tryButton = document.querySelector(".try-button");
+      tryButton.addEventListener("click", tryIn);
+    </script>
+  </body>
+</html>
